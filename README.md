@@ -24,7 +24,7 @@ class Persona {
 	}
 	
 	getInfo() {
-		return `${this.nombre}, ${this.edad},  ${this.frase}`;
+		return `${this.nombre}, ${this.edad} años,  ${this.frase}`;
 	}
 }
 ```
@@ -55,6 +55,30 @@ class Persona {
 El **constructor** va a recibir los parametros recibidos y los va a asignar a las variables que creamos anteriorment, nota que no es necesario el uso de **let** o **const** , esto se debe al modo estricto de JS.
 
 ###### NOTA: El constructor siempre se va a ejecutar al crear una instancia de esa clase.
+
+## Instanciar o crear un objeto
+
+Como mencionamos anteriormente, las clases nos permite crear varios objetos que heredan las mismas caracteriticas que definimos en el constructor.
+
+```javascript
+const maria = new Persona("Maria", 35, "Soy Maria y soy programadora");
+```
+Para crear ese objeto, se crea una constante que apunta una instancia de nuestra clase Persona, usando la palabra reservada **new** seguido del nombre de la clase, entre parentesis los elementos que va a tener nuestra persona en este caso: **nombre, edad y frase**
+
+Podemos acceder a esas propiedades de la siguiente manera: 
+
+```javascript
+console.log(maria.nombre) // "Maria"
+console.log(maria.edad) // 35
+console.log(maria.frase) // "Soy Maria y soy programadora"
+```
+
+También podemos aceder a los métodos de la siguiente manera:
+
+```javascript
+maria.getInfo(): // "Maria, 35 años, Soy Maria y soy programadora"
+```
+
 
 ```javascript
 class Figura {
