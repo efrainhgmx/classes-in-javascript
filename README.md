@@ -11,7 +11,7 @@ En pocas palabras....
 
 **Las clases nos permiten crear objetos de una forma más clara y nos permite trabajar de manera más sencilla la herencia.**
 
-## Sintaxis de 
+## Sintaxis de una Clase
 
 La manera de crear una Clase es la siguiente: 
 
