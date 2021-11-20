@@ -55,6 +55,18 @@ class Persona {
 El **constructor** va a recibir los parametros recibidos y los va a asignar a las variables que creamos anteriorment, nota que no es necesario el uso de **let** o **const** , esto se debe al modo estricto de JS.
 
 ###### NOTA: El constructor siempre se va a ejecutar al crear una instancia de esa clase.
+```javascript
+class Figura {
+	constructor() {
+		console.log("Hola soy una el constructor de Figura");
+	}
+}
+
+const rectangulo = new Figura();
+console.log(rectangulo) // "Hola soy una el constructor de Figura"
+```
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## Instanciar o crear un objeto
 
@@ -77,16 +89,4 @@ También podemos aceder a los métodos de la siguiente manera:
 
 ```javascript
 maria.getInfo(): // "Maria, 35 años, Soy Maria y soy programadora"
-```
-
-
-```javascript
-class Figura {
-	constructor() {
-		console.log("Hola soy una el constructor de Figura");
-	}
-}
-
-const rectangulo = new Figura();
-console.log(rectangulo) // "Hola soy una el constructor de Figura"
 ```
