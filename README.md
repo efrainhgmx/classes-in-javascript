@@ -132,3 +132,10 @@ const spiderman = new Personaje("Spider Man");
 spiderman.setEnemigo = "Duende verde";
 ```
 
+
+
+#### NOTA IMPORTANTE: No es recomdable establecer más de un valor en un set, esto se debe a que esto pude causar problemas:
+
+```javascript
+set setEnemigo(enemigo, archienemigo) // Esto va a dar un error o puede causar problemas
+```
