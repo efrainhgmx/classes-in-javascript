@@ -139,3 +139,16 @@ spiderman.setEnemigo = "Duende verde";
 ```javascript
 set setEnemigo(enemigo, archienemigo) // Esto va a dar un error o puede causar problemas
 ```
+
+
+### Gets
+
+Así como los sets nos permiten establecer un valor, los gets nos permiten recuperar u obtener el valor de una propiedad en especifico:
+
+```javascript
+get getEnemigo() {
+	return `El enemigo de ${this.nombre} es ${this.enemigo}`;
+}
+
+console.log( spiderman.getEnemigo ) // "El enemigo de Spider Man es el DUENDE VERDE";
+```
