@@ -90,3 +90,45 @@ También podemos aceder a los métodos de la siguiente manera:
 ```javascript
 maria.getInfo(): // "Maria, 35 años, Soy Maria y soy programadora"
 ```
+
+
+
+## Sets y Gets (Setters y getters)
+
+Los sets y get nos ayudan a controlar los valores de una propieda o la manera en como se establecen, y esto es propio de la programación orientada a objetos.
+
+No hay una regla exacta de como deben ser declarados los **gets y sets**, pero se acostumbra ser declarados después del constructor y antes de los métodos de la clase.
+
+### Sets
+
+Los sets nos permiten establecer o setear un valor a nuestro objeto.
+
+```javascript
+class Personaje {
+	nombre = ' ';
+	enemigo = ' ';
+	
+
+	constructor(nombre = "Sin nombre") {
+		this.nombre = nombre;
+	}
+
+	set setEnemigo( enemigo ) {
+		this.enemigo = enemigo.toUpperCase();
+	}
+
+	miNemesis() {
+		console..log(`${this.enemigo}`);
+	}
+}
+```
+
+En este caso, se declara con la palabra reservada **set** para indicar que es un setter. Y en este caso voy a setear un valor que no recibe el constructor y que siempre este en mayuscula indepenientemente de lo que envie el usuario.
+
+La manera de trabajar con los sets, es instanciar un nuevo objeto,  seguido de un punto el nombre de nuestro set y el valor que vamos a setear:
+
+```javascript
+const spiderman = new Personaje("Spider Man");
+spiderman.setEnemigo = "Duende verde";
+```
+
